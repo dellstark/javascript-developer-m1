@@ -9,4 +9,17 @@
 //         Saída:
 //             Recuperação
 
-const { gets, print } = require('./funcoes-auxiliares-ex1');
+const { gets, print } = require("./funcoes-auxiliares-ex1");
+
+const entradas = gets();
+
+
+if (entradas <= 5) {
+  console.log("Reprovado");
+} else if (media > 5 && media < 7) {
+  console.log("Recuperação");
+} else {
+  console.log("Aprovado");
+}
+
+print(media);
